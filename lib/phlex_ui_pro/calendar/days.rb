@@ -22,7 +22,7 @@ module PhlexUI
                     class:
                         tokens(
                             BASE_CLASS,
-                            "bg-primary text-primary-text hover:bg-primary hover:text-primary-text focus:bg-primary focus:text-primary-text"
+                            "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground"
                         ),
                     role: "gridcell",
                     tabindex: "0",
@@ -41,7 +41,7 @@ module PhlexUI
                     class:
                         tokens(
                             BASE_CLASS,
-                            "bg-accent-background text-accent-text hover:bg-accent-background hover:text-accent-text focus:bg-accent-background focus:text-accent-text"
+                            "bg-accent text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                         ),
                     role: "gridcell",
                     tabindex: "-1",
@@ -59,7 +59,7 @@ module PhlexUI
                     class:
                         tokens(
                             BASE_CLASS,
-                            "bg-background text-text hover:bg-accent-background hover:text-accent-text focus:bg-accent-background focus:text-accent-text"
+                            "bg-background text-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                         ),
                     role: "gridcell",
                     tabindex: "-1",
@@ -77,7 +77,7 @@ module PhlexUI
                     class:
                         tokens(
                             BASE_CLASS,
-                            "bg-background text-muted-text hover:bg-accent-background hover:text-accent-text focus:bg-accent-background focus:text-accent-text"
+                            "bg-background text-muted-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                         ),
                     role: "gridcell",
                     tabindex: "-1",
@@ -90,7 +90,7 @@ module PhlexUI
             template_tag(data: { calendar_target: target }) do
                 td(
                     class:
-                        "relative p-0 text-center text-sm focus-within:relative focus-within:z-20 [&:has([aria-selected])]:bg-accent-background [&:has([aria-selected])]:rounded-md",
+                        "relative p-0 text-center text-sm focus-within:relative focus-within:z-20 [&:has([aria-selected])]:bg-accent [&:has([aria-selected])]:rounded-md",
                     role: "presentation",
                     &
                 )

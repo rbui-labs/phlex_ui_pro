@@ -29,7 +29,7 @@ module PhlexUI
         def default_attrs
             {
                 class:
-                    "overflow-hidden p-1 text-text [&_[group-heading]]:px-2 [&_[group-heading]]:py-1.5 [&_[group-heading]]:text-xs [&_[group-heading]]:font-medium [&_[group-heading]]:text-muted-text",
+                    "overflow-hidden p-1 text-foreground [&_[group-heading]]:px-2 [&_[group-heading]]:py-1.5 [&_[group-heading]]:text-xs [&_[group-heading]]:font-medium [&_[group-heading]]:text-muted-foreground",
                 role: "presentation",
                 data: {
                     value: @title,
