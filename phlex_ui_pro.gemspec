@@ -13,5 +13,5 @@ Gem::Specification.new do |s|
   s.add_dependency "phlex", "~> 1.7"
 	s.add_dependency "zeitwerk", "~> 2.6"
   s.add_dependency "rouge", "~> 4.2.0"
-  s.add_dependency "phlex_ui", "~> 0.1.0"
+  s.add_dependency "phlex_ui", "~> 0.1.1"
 end
