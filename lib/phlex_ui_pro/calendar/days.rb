@@ -86,13 +86,13 @@ module PhlexUI
             end
         end
 
-        def date_template(target, &)
+        def date_template(target, &block)
             template_tag(data: { calendar_target: target }) do
                 td(
                     class:
                         "relative p-0 text-center text-sm focus-within:relative focus-within:z-20 [&:has([aria-selected])]:bg-accent [&:has([aria-selected])]:rounded-md",
                     role: "presentation",
-                    &
+                    &block
                 )
             end
         end

@@ -16,11 +16,11 @@ module PhlexUI
             super(**attrs)
         end
 
-        def template(&)
+        def template(&block)
             template_tag(data: { dialog_target: "content" }) do
                 div(data: { controller: 'dismissable' }) do
                     backdrop
-                    div(**attrs, &)
+                    div(**attrs, &block)
                 end
             end
         end

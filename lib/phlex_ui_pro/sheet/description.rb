@@ -2,8 +2,8 @@
 
 module PhlexUI
     class Sheet::Description < Base
-        def template(&)
-            p(**attrs, &)
+        def template(&block)
+            p(**attrs, &block)
         end
 
         private
