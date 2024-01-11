@@ -2,7 +2,7 @@
 
 module PhlexUI
     class Calendar::Next < Base
-        def template(&)
+        def template(&block)
             button(**attrs) do
                 icon
             end

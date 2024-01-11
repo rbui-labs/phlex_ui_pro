@@ -32,8 +32,8 @@ module PhlexUI
             end
         end
 
-        def input_container(&)
-            div(class: "flex items-center border-b px-3", &)
+        def input_container(&block)
+            div(class: "flex items-center border-b px-3", &block)
         end
 
         def default_attrs

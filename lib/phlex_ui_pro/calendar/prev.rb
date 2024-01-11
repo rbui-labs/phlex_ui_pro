@@ -2,7 +2,7 @@
 
 module PhlexUI
     class Calendar::Prev < Base
-        def template(&)
+        def template(&block)
             button(**attrs) do
                 icon
             end

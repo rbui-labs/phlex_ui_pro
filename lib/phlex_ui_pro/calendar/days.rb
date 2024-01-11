@@ -86,7 +86,7 @@ module PhlexUI
             end
         end
 
-        def date_template(target, &)
+        def date_template(target, &block)
             template_tag(data: { calendar_target: target }) do
                 td(
                     class:

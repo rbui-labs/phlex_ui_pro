@@ -7,10 +7,10 @@ module PhlexUI
             super(**attrs)
         end
 
-        def template(&)
+        def template(&block)
             div(**attrs) do
                 render_header if @title
-                render_items(&)
+                render_items(&block)
             end
         end
 
@@ -22,8 +22,8 @@ module PhlexUI
             end
         end
 
-        def render_items(&)
-            div(group_items: "", role: "group", &)
+        def render_items(&block)
+            div(group_items: "", role: "group", &block)
         end
 
         def default_attrs
