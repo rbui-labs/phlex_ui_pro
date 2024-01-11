@@ -92,7 +92,7 @@ module PhlexUI
                     class:
                         "relative p-0 text-center text-sm focus-within:relative focus-within:z-20 [&:has([aria-selected])]:bg-accent [&:has([aria-selected])]:rounded-md",
                     role: "presentation",
-                    &
+                    &block
                 )
             end
         end
